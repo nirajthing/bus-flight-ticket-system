@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home page</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/cd3112b74c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- ....................................header................................. -->
+
+    <div class="mainHeader">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">OnTicket</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            My Bookings
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <p>Ticket</p>
+                            <a class="dropdown-item" href="#">Cancel/Refund Ticket</a>
+                            <a class="dropdown-item" href="#">Print/Download Ticket</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Login</a>
+                            <a class="dropdown-item" href="#">Signup</a>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="headerText">
+            <h1>Where to Next?</h1>
+            <p>Discover your dream destinations with us.</p>
+        </div>
+
+
+        <!-- ....................................Search Box................................. -->
+
+        <div class="wrapper">
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link tab1 active" data-toggle="tab" href="#tabs-1" role="tab">Bus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tab2" data-toggle="tab" href="#tabs-2" role="tab">Flight</a>
+                    </li>
+                </ul>
+                <div class="tab-pane active" id="tabs-1" role="tabpanel">
+
+                    <div class="searchContainer">
+                        <div class="searchBox">
+                            <div class="boxItems">
+                                <div class="boxItem" id="sec1">
+
+                                    <span><input type="text" placeholder="Depart From"><i
+                                            class="fas fa-map-marker-alt"></i></span>
+                                </div>
+                                <div class="boxItem" id="sec2">
+                                    <input type="text" placeholder="Going To"><i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="boxItem" id="sec3">
+
+                                    <input type="date">
+                                </div>
+                                <div class="boxItem" id="sec4">
+                                    <button type="button">Search <i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tabs-2" role="tabpanel">
+                    <div class="searchContainer">
+                        <div class="searchBox">
+                            <div class="boxItems">
+                                <div class="boxItem" id="sec1">
+
+                                    <span><input type="text" placeholder="Derart From"><i
+                                            class="fas fa-map-marker-alt"></i></span>
+                                </div>
+                                <div class="boxItem" id="sec2">
+                                    <input type="text" placeholder="Going To"><i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="boxItem" id="sec3">
+
+                                    <input type="date">
+                                </div>
+                                <div class="boxItem" id="sec4">
+                                    <button type="button">Search <i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- ....................................Top Destinations................................. -->
+
+
+    <div class="destination-container">
+        <div class="grid-items">
+            <div class="grid-item1">
+                <div class="box-items">
+                    <div class="imgbox">
+                        <img src="./images/janakpur.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Janakpur</h2>
+                        <p>Begnas Lake is a freshwater lake in Pokhara Lekhnath Metropolis of Kaski district of
+                            Nepal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item2">
+                <div class="box-items">
+                    <div class="imgbox">
+                        <img src="./images/temple.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Temple</h2>
+                        <p>Begnas Lake is a freshwater lake in Pokhara Lekhnath Metropolis of Kaski district of
+                            Nepal.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="grid-item3">
+                <div class="box-items">
+                    <div class="imgbox">
+                        <img src="./images/pkr.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Pokhara</h2>
+                        <p>Begnas Lake is a freshwater lake in Pokhara Lekhnath Metropolis of Kaski district of
+                            Nepal.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="grid-item4">
+                <div class="box-items">
+                    <div class="imgbox">
+                        <img src="./images/swayambhu.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Swayambhunath</h2>
+                        <p>Begnas Lake is a freshwater lake in Pokhara Lekhnath Metropolis of Kaski district of
+                            Nepal.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="grid-item5">
+                <div class="box-items">
+                    <div class="imgbox">
+                        <img src="./images/lake.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Begnas Lake</h2>
+                        <p>Begnas Lake is a freshwater lake in Pokhara Lekhnath Metropolis of Kaski district of
+                            Nepal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item6">
+                <div class="box-items">
+                    <div class="imgbox">
+                        <img src="./images/changu.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Changunarayan</h2>
+                        <p>Begnas Lake is a freshwater lake in Pokhara Lekhnath Metropolis of Kaski district of
+                            Nepal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item7">
+                <div class="box-items">
+                    <div class="imgbox">
+                        <img src="./images/chitwan.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Chitwan</h2>
+                        <p>Begnas Lake is a freshwater lake in Pokhara Lekhnath Metropolis of Kaski district of
+                            Nepal.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- .............................why us ? Section......................... -->
+
+    <div class="why-us-container">
+        <div class="top-text-container">
+            <h2>why choose us ?</h2>
+            <p>customer satisfaction is our priority. there are many great reasons to choose onTicket.</p>
+        </div>
+        <div class="boxes-container">
+            <div class="all-boxes">
+                <div class="box box1">
+                    <div class="box-contents">
+                        <span class="iconify" data-icon="ion:brush-outline" data-inline="false"></span>
+                        <div class="text-div">
+                            <h3>user friendly design</h3>
+                            <p>It’s easy to get started. No setup time or installation required with ourcloud-based
+                                offering. </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="box box2">
+                    <div class="box-contents">
+                        <span class="iconify" data-icon="ion:pricetag-outline" data-inline="false"></span>
+                        <div class="text-div">
+                            <h3>best price</h3>
+                            <p>It’s easy to get started. No setup time or installation required with ourcloud-based
+                                offering. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box box3">
+                    <div class="box-contents">
+                        <span class="iconify" data-icon="ant-design:customer-service-outline"
+                            data-inline="false"></span>
+                        <div class="text-div">
+                            <h3>full support</h3>
+                            <p>It’s easy to get started. No setup time or installation required with ourcloud-based
+                                offering. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box box4">
+                    <div class="box-contents">
+                        <span class="iconify" data-icon="icons8:checked" data-inline="false"></span>
+                        <div class="text-div">
+                            <h3>timely delivery</h3>
+                            <p>It’s easy to get started. No setup time or installation required with ourcloud-based
+                                offering. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box box5">
+                    <div class="box-contents">
+                        <span class="iconify" data-icon="gridicons:refund" data-inline="false"></span>
+                        <div class="text-div">
+                            <h3>refund policy</h3>
+                            <p>It’s easy to get started. No setup time or installation required with ourcloud-based
+                                offering. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box box6">
+                    <div class="box-contents">
+                        <span class="iconify" data-icon="ic:baseline-payment" data-inline="false"></span>
+                        <div class="text-div">
+                            <h3>online payment</h3>
+                            <p>It’s easy to get started. No setup time or installation required with ourcloud-based
+                                offering. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ................................Mobile platform............................... -->
+
+
+    <div class="mobile-container">
+        <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="./images/man.jpg">
+            <div class="all-contents">
+                <div class="text-items">
+                    <h1>onTicket is your perfect travel partner</h1>
+                    <p>We got you covered on the mobile platform
+                        as well. Easy and superfast way to book and
+                        reserve your plane or bus tickets.</p>
+                </div>
+                <div class="mobile-store-images">
+                    <a href="#"><img src="./images/download-on-app-store.png" alt=""></a>
+                    <a href="#"><img src="./images/play-badge.png" alt=""></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+ 
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./parallax.min.js"></script>
+    <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+</body>
+
+</html>

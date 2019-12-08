@@ -1,0 +1,121 @@
+$textColor: #d8d8d8;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+  
+
+	.logo img {
+		width: 60px;
+		height: 60px;
+	}
+
+	.container {
+        background: #225fe2;
+                
+	}
+
+	.navbar {
+		display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+		.nav-items {
+			display: table;
+            height: 100%;
+            
+		}
+
+		.nav-links {
+			list-style: none;
+			display: table-cell;
+			vertical-align: middle;
+
+			li {
+				display: inline-block;
+				padding: 0 35px 0 0;
+			}
+
+			a {
+				text-decoration: none;
+				color: $textColor;
+                display: block;
+                text-transform: uppercase;
+
+				&:hover {
+					color: #ffffff;
+				}
+			}
+			a:not(.dropdownmenu)::after {
+				content: '';
+				display: block;
+				width: 0;
+				height: 2px;
+				background: rgb(103, 226, 46);
+				transition: width .3s;
+			}
+			a:hover::after {
+				width: 100%;
+			}
+		}
+		.dropdown {
+			position: relative;
+			width: 150px;
+		}
+
+		.dropdown-content {
+			margin-top: 12px;
+			background-color: rgb(240, 240, 240);
+			opacity: 0;
+			visibility: hidden;
+			position: absolute;
+			border-radius: 3px;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			transform: translateY(-1em);
+			z-index: 1;
+			transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+		}
+
+		.dropdown:focus .dropdown-content,
+		.dropdown:focus-within .dropdown-content,
+		.dropdown:hover .dropdown-content {
+			visibility: visible;
+			opacity: 1;
+			z-index: 1;
+			transform: translateY(0%);
+			transition-delay: 0s, 0s, 0.3s;
+		}
+
+		.dropdown-content li {
+			text-decoration: none;
+			display: block;
+
+			&:hover {
+				background-color: #d1d0d0;
+				border-radius: 3px;
+
+				a {
+					transform: translateX(10px);
+					-webkit-transition: 0.3s;
+					transition: all ease 0.3s;
+				}
+			}
+		}
+
+		.dropdown-content a {
+			padding: 10px;
+			color: rgb(82, 82, 82);
+
+			&:hover {
+				color: rgb(82, 82, 82);
+			}
+		}
+	}
+}
